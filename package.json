@@ -1,0 +1,19 @@
+{
+  "name": "webpack_amd",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "webpack": "^5.33.2",
+    "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {
+    "requirejs": "^2.3.6"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "webpack --config webpack.config.js",
+    "watch": "yarn webpack --watch"
+  }
+}
